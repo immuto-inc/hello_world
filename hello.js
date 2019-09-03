@@ -59,6 +59,7 @@ async function run_test() {
                         console.log("Hello World record verification successful!")
                         console.log(verification)
                 }      
+		process.exit()
         } catch (err) {
                 console.error("Error during test:")
                 console.error(err)
