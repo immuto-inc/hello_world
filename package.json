@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/immuto-inc/hello_world#readme",
   "dependencies": {
-    "immuto-backend": "^0.1.6"
+    "immuto-sdk": "^1.0.1"
   }
 }

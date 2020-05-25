@@ -1,4 +1,4 @@
-var Immuto = require('immuto-backend')
+var Immuto = require('immuto-sdk')
 var readline = require('readline');
 
 var rl = readline.createInterface({
@@ -59,9 +59,10 @@ async function run_test() {
                         console.log("Hello World record verification successful!")
                         console.log(verification)
                 }      
-		process.exit()
         } catch (err) {
                 console.error("Error during test:")
                 console.error(err)
-        }
+        } finally {
+		process.exit()
+	}
 }
