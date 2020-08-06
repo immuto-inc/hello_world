@@ -43,7 +43,7 @@ function get_credentials() {
 async function run_test() {
         try {
                 let cred = await get_credentials()
-                let im = Immuto.init(true, "https://dev.immuto.io")
+                let im = Immuto.init()
                         
                 console.log("Authenticating")
                 await im.authenticate(cred.email, cred.password)
